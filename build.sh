@@ -39,7 +39,7 @@ echo "============================================="
     -s ALLOW_MEMORY_GROWTH=1 \
     -s MALLOC=emmalloc \
     -s MODULARIZE=1 \
-    -s ENVIRONMENT="worker" \
+    -s ENVIRONMENT="shell" \
     -s EXPORT_ES6=1 \
     -s USE_ES6_IMPORT_META=0 \
     -s EXPORTED_FUNCTIONS="['_rnnoise_process_frame', '_rnnoise_init', '_rnnoise_destroy', '_rnnoise_create', '_malloc', '_free']" \
