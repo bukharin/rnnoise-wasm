@@ -35,6 +35,7 @@ echo "============================================="
   emcc \
     ${OPTIMIZE} \
     -s STRICT=1 \
+    -s SINGLE_FILE=1 \
     -s ALLOW_MEMORY_GROWTH=1 \
     -s MALLOC=emmalloc \
     -s MODULARIZE=1 \
