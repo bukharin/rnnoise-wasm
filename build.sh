@@ -21,10 +21,6 @@ echo "============================================="
 (
   cd rnnoise
 
-  # Clean possible autotools clutter that might affect the configurations step
-  git clean -f -d
-  ./autogen.sh
-
   # For some reason setting the CFLAGS export doesn't apply optimization to all compilation steps
   # so we need to explicitly pass it to configure.
   emconfigure ./configure CFLAGS=${OPTIMIZE} --enable-static=no --disable-examples --disable-doc
